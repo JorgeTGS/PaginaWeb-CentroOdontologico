@@ -1,0 +1,28 @@
+.Cabeçalho{
+display: flex;
+align-items: center; /*Alinha os itens horizontalmente na <DIV>*/
+background-color: red; /*Cor do fundo da <DIV>*/
+padding-left: 20px; /*Espaço na margem de dentro da <DIV> do lado esquerdo*/
+
+width: auto; /*Deixa a <DIV> com a largura total da tela*/
+height: 108px; /*Deixa a <DIV> em uma altura fixa*/
+font-size: 200%; /*Tamanho da fonte*/
+}
+
+.AlinharDir{
+    position: right;
+}
+
+.Logo{
+    max-width: 100px;/*Lagura maxima*/
+    max-height: 100px;/*Altura Maxima*/
+}
+
+
+.ImgPrincipal{
+    width: 100%; /*Deixa a iamgem com a largura total da tela*/
+    height: 691px;/*Deixa a imagem em uma altura fixa*/
+    object-fit: cover; /* a imagem ou vídeo será redimensionado de forma que preencha completamente a caixa, mantendo suas proporções */
+}
+
+
