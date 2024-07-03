@@ -1,13 +1,14 @@
 .Cabeçalho{
 display: flex;
 align-items: center; /*Alinha os itens horizontalmente na <DIV>*/
-background-color: red; /*Cor do fundo da <DIV>*/
+background-color: aqua; /*Cor do fundo da <DIV>*/
+opacity: 60%;
 padding-left: 20px; /*Espaço na margem de dentro da <DIV> do lado esquerdo*/
-
 width: auto; /*Deixa a <DIV> com a largura total da tela*/
 height: 108px; /*Deixa a <DIV> em uma altura fixa*/
 font-size: 200%; /*Tamanho da fonte*/
 }
+
 
 .AlinharDir{
     position: right;
@@ -20,9 +21,65 @@ font-size: 200%; /*Tamanho da fonte*/
 
 
 .ImgPrincipal{
+    display: flex;
     width: 100%; /*Deixa a iamgem com a largura total da tela*/
     height: 691px;/*Deixa a imagem em uma altura fixa*/
     object-fit: cover; /* a imagem ou vídeo será redimensionado de forma que preencha completamente a caixa, mantendo suas proporções */
 }
 
+.Contato{
+   display: flex;
 
+}
+
+.ImgPContato{
+    display: flex;
+    width: 100%; /*Deixa a iamgem com a largura total da tela*/
+    height: 691px;/*Deixa a imagem em uma altura fixa*/
+    object-fit: cover;
+    position: relative;
+}
+
+.DivEsquerda{
+align-items: center;
+height: 691px;
+position: absolute;
+left: 0;
+
+display: flex;
+ align-items: center;
+justify-content: center;
+}
+
+.DivDireita{
+background-color: aqua;
+position: absolute;
+right: 0;
+
+/*Define a distancia dá margem*/
+margin-top: 70.5px;
+margin-right: 600px;
+
+/*Define o tamanho da caixa*/
+width: 400px;
+height: 550px;
+
+display: flex;
+ align-items: center;
+   justify-content: center;
+}
+
+.DivDireitaDentro{
+
+    
+}
+
+.Formulario{
+display: flex;
+ align-items: center;
+   justify-content: center;
+}
+
+.ListaForm{
+    list-style-type: none; /*Remover os pontinhos da lista <li>*/
+}
