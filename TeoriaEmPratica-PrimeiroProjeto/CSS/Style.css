@@ -42,6 +42,7 @@ font-size: 200%; /*Tamanho da fonte*/
 
 .DivEsquerda{
 align-items: center;
+width: 50%;
 height: 691px;
 position: absolute;
 left: 0;
@@ -52,25 +53,27 @@ justify-content: center;
 }
 
 .DivDireita{
-background-color: aqua;
-position: absolute;
-right: 0;
-
-/*Define a distancia dá margem*/
-margin-top: 70.5px;
-margin-right: 600px;
-
-/*Define o tamanho da caixa*/
-width: 400px;
-height: 550px;
-
-display: flex;
- align-items: center;
-   justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 691px;
+    position: absolute;
+    right: 0;
+    
+    display: flex;
+     align-items: center;
+    justify-content: center;
 }
 
 .DivDireitaDentro{
-
+    background-color: aqua;
+    
+    /*Define o tamanho da caixa*/
+    width: 400px;
+    height: 550px;
+    
+    display: flex;
+     align-items: center; /*Alinha Horizontalmente*/
+       
     
 }
 
