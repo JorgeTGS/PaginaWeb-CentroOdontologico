@@ -1,3 +1,7 @@
+body{
+    margin: 0%;
+}
+
 .Cabeçalho{
 display: flex;
 align-items: center; /*Alinha os itens horizontalmente na <DIV>*/
@@ -23,7 +27,7 @@ font-size: 200%; /*Tamanho da fonte*/
 .ImgPrincipal{
     display: flex;
     width: 100%; /*Deixa a iamgem com a largura total da tela*/
-    height: 691px;/*Deixa a imagem em uma altura fixa*/
+    height: 800px;/*Deixa a imagem em uma altura fixa*/
     object-fit: cover; /* a imagem ou vídeo será redimensionado de forma que preencha completamente a caixa, mantendo suas proporções */
 }
 
@@ -35,54 +39,111 @@ font-size: 200%; /*Tamanho da fonte*/
 .ImgPContato{
     display: flex;
     width: 100%; /*Deixa a iamgem com a largura total da tela*/
-    height: 691px;/*Deixa a imagem em uma altura fixa*/
+    height: 800px;/*Deixa a imagem em uma altura fixa*/
     object-fit: cover;
     position: relative;
 }
 
 .DivEsquerda{
 align-items: center;
-width: 50%;
-height: 691px;
+width: 48%;
+height: 800px;
 position: absolute;
 left: 0;
+
+margin-right: 20px;
+margin-left: 20px;
 
 display: flex;
  align-items: center;
 justify-content: center;
 }
 
-.DivDireita{
-    align-items: center;
-    width: 50%;
-    height: 691px;
+.DivEsquerdaDentro{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
     right: 0;
-    
+    display: flex;
+}
+
+.DivDireita{
+    align-items: center;
+    width: 48%;
+    height: 800px;
+    position: absolute;
+    right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+
     display: flex;
      align-items: center;
     justify-content: center;
 }
 
+
 .DivDireitaDentro{
+    position: absolute;
+    left: 0;
     background-color: aqua;
-    
+
     /*Define o tamanho da caixa*/
     width: 400px;
     height: 550px;
-    
-    display: flex;
-     align-items: center; /*Alinha Horizontalmente*/
-       
-    
+    display: flex; 
+    border-radius: 3%; /*Arredondar Cantos*/
+
 }
 
 .Formulario{
+width: 400px;
+height: 550px;
+
 display: flex;
- align-items: center;
-   justify-content: center;
+align-items: center;
+justify-content: center;
+}
+
+label{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+}
+
+input{
+    border: 0;
+
+    width: 340px;
+    height: 30px;
+
+}
+
+textarea{
+    border: 0;
+    border-radius: 1%; /*Arredondar Cantos*/
+
+resize: none;
+    width: 340px;
+    height: 100px;
+}
+
+button{
+    float: right; /* permite que um elemento seja movido para a esquerda ou para a direita */
+    width: 100px;
+    height: 40px;
+
+    border: none;
+    border-radius: 8%; /*Arredondar Cantos*/  
 }
 
 .ListaForm{
+    padding: 0%;
     list-style-type: none; /*Remover os pontinhos da lista <li>*/
+}
+
+footer{
+
+background-color: aqua
+; /*Cor do fundo da <DIV>*/
+height: 108px; /*Deixa a <DIV> em uma altura fixa*/
+font-size: 200%; /*Tamanho da fonte*/
+
 }
