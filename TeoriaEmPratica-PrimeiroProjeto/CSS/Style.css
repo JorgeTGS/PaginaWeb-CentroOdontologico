@@ -4,18 +4,36 @@ body{
 
 .Cabeçalho{
 display: flex;
+justify-content: center;/*É usada em conjunto com display: flex; para alinhar itens ao longo do eixo principal */
 align-items: center; /*Alinha os itens horizontalmente na <DIV>*/
+
 background-color: aqua; /*Cor do fundo da <DIV>*/
-opacity: 60%;
+
 padding-left: 20px; /*Espaço na margem de dentro da <DIV> do lado esquerdo*/
 width: auto; /*Deixa a <DIV> com a largura total da tela*/
 height: 108px; /*Deixa a <DIV> em uma altura fixa*/
+
 font-size: 200%; /*Tamanho da fonte*/
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav li{
+    font-size: 60%;
+    display: inline;
+    list-style-type: none;
+}
+
+nav ul{
+    margin: 0; 
+    padding: 0;
+
+    margin-bottom: 7px;
 }
 
 .AlinharDir{
-    position: right;
+    margin-left: 400px;
 }
+
 
 .Logo{
     max-width: 100px;/*Lagura maxima*/
@@ -26,7 +44,7 @@ font-size: 200%; /*Tamanho da fonte*/
 .ImgPrincipal{
     display: flex;
     width: 100%; /*Deixa a iamgem com a largura total da tela*/
-    height: 823px;/*Deixa a imagem em uma altura fixa*/
+    height: 783px;/*Deixa a imagem em uma altura fixa*/
     object-fit: cover; /* a imagem ou vídeo será redimensionado de forma que preencha completamente a caixa, mantendo suas proporções */
 }
 
@@ -38,7 +56,7 @@ font-size: 200%; /*Tamanho da fonte*/
 .ImgPContato{
     display: flex;
     width: 100%; /*Deixa a iamgem com a largura total da tela*/
-    height: 823px;/*Deixa a imagem em uma altura fixa*/
+    height: 783px;/*Deixa a imagem em uma altura fixa*/
     object-fit: cover;
     position: relative;
 }
@@ -46,7 +64,7 @@ font-size: 200%; /*Tamanho da fonte*/
 .DivEsquerda{
 align-items: center;
 width: 48%;
-height: 823px;
+height: 783px;
 position: absolute;
 left: 0;
 
@@ -68,7 +86,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .DivDireita{
     align-items: center;
     width: 48%;
-    height: 823px;
+    height: 783px;
     position: absolute;
     right: 0;
     margin-left: 20px;
@@ -135,14 +153,39 @@ button{
 
 .ListaForm{
     padding: 0%;
-    list-style-type: none; /*Remover os pontinhos da lista <li>*/
+    list-style-type: none;
 }
 
 footer{
-
-background-color: aqua
-; /*Cor do fundo da <DIV>*/
-height: 108px; /*Deixa a <DIV> em uma altura fixa*/
+background-color: aqua; /*Cor do fundo da <DIV>*/
+height: 40px; /*Deixa a <DIV> em uma altura fixa*/
 font-size: 200%; /*Tamanho da fonte*/
 
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+footer ul{
+    list-style-type: none; /*Remover os pontinhos da lista*/
+    font-size: 60%;
+    display: flex;
+
+    margin: 0; /*Remover as margens*/
+    padding: 0; /*Remover as margens de dentro*/
+}
+
+footer img{
+ max-width: auto;
+ height: 32px;
+ margin-right: 5px;
+}
+
+footer a{
+ max-width: auto; /*lagura Maxima*/
+ height: 28px; /*Altura Maxima*/
+}
+
+.Espaço{
+    margin-left: 5px;
 }
