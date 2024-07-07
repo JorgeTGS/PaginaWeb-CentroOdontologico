@@ -16,6 +16,9 @@ height: 108px; /*Deixa a <DIV> em uma altura fixa*/
 
 font-size: 200%; /*Tamanho da fonte*/
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+box-shadow: 0px 5px 0px gray;  /*Adiciona Sombra*/
+
 }
 
 nav li{
@@ -70,6 +73,8 @@ position: absolute;
     width: 100%; /*Deixa a iamgem com a largura total da tela*/
     height: 783px;/*Deixa a imagem em uma altura fixa*/
     object-fit: cover; /* a imagem ou vídeo será redimensionado de forma que preencha completamente a caixa, mantendo suas proporções */
+    
+    filter: blur(10px); /*Desfoca a imagem*/
 }
 
 .ImgPrincipalDentro{
@@ -83,6 +88,9 @@ height: 783px;
 
 }
 
+/* Caixas Pagina Pricipal*/
+
+
 .Caixa1{
     background-color: white;
     border-radius: 3%;
@@ -95,6 +103,8 @@ height: 783px;
 
     margin-right: 30px;
     transition: 1s;
+
+    box-shadow: 5px 8px 0px gray; /*Adicona sombra*/
 
     h1{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -113,9 +123,10 @@ height: 783px;
     }
     
     Img{
+        object-fit: cover;
         transition: 0.9s;
         border-radius: 3%;
-        width: auto;
+        width: 345.13px;
        height: 230px
        
     }
@@ -151,8 +162,9 @@ height: 783px;
 
     .ImgCaixa{
         
-        width: auto;
-       height: 300px
+    object-fit: cover;
+    width: 450px;
+    height: 300px
 
     }
 
@@ -182,6 +194,8 @@ height: 783px;
     margin-right: 30px;
     transition: 1s;
 
+    box-shadow: 5px 8px 0px gray; /*Adicona sombra*/
+
     h1{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -199,9 +213,10 @@ height: 783px;
     }
 
     Img{
+        object-fit: cover;
         transition: 0.9s;
         border-radius: 3%;
-        width: auto;
+        width: 345.13px;
        height: 230px
        
     }
@@ -237,8 +252,9 @@ height: 783px;
 
     .ImgCaixa{
         
-        width: auto;
-       height: 300px
+    object-fit: cover;
+    width: 450px;
+    height: 300px
 
     }
 
@@ -268,6 +284,8 @@ height: 783px;
     margin-right: 30px;
     transition: 1s;
 
+    box-shadow: 5px 8px 0px gray; /*Adicona sombra*/
+    
    h1{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -285,11 +303,13 @@ height: 783px;
     }
     
     Img{
+        object-fit: cover;
         transition: 0.9s;
         border-radius: 3%;
-        width: auto;
+        width: 345.13px;
        height: 230px
        
+
     }
 
     
@@ -322,8 +342,9 @@ height: 783px;
   padding: 10px;
 
     .ImgCaixa{
-        
-        width: auto;
+
+        object-fit: cover;
+        width: 450px;
        height: 300px
 
     }
@@ -342,7 +363,7 @@ height: 783px;
 }
  
     
-   
+/* Caixas Pagina Pricipal*/
 
 
 .Contato{
@@ -356,6 +377,8 @@ height: 783px;
     height: 783px;/*Deixa a imagem em uma altura fixa*/
     object-fit: cover;
     position: relative;
+
+    filter: blur(3px);
 }
 
 .DivEsquerda{
@@ -464,6 +487,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 
+box-shadow: 0px 0px 20px;
+
 ul{
     list-style-type: none; /*Remover os pontinhos da lista*/
     font-size: 60%;
@@ -492,5 +517,3 @@ img{
 
 
 }
-
-
