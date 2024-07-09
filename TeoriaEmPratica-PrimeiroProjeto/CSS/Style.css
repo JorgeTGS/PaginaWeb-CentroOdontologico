@@ -91,7 +91,7 @@ height: 783px;
 /* Caixas Pagina Pricipal*/
 
 
-.Caixa1{
+.Caixa1 {
     background-color: white;
     border-radius: 3%;
 
@@ -366,6 +366,10 @@ height: 783px;
 /* Caixas Pagina Pricipal*/
 
 
+
+/* Pagian 2*/
+
+
 .Contato{
    display: flex;
 
@@ -381,9 +385,12 @@ height: 783px;
     filter: blur(3px);
 }
 
+
+/* Div  lado Esquerdo*/
+
 .DivEsquerda{
-align-items: center;
-width: 48%;
+align-items: flex-end; /* Alinha a direita*/
+width: 46%;
 height: 783px;
 position: absolute;
 left: 0;
@@ -392,20 +399,88 @@ margin-right: 20px;
 margin-left: 20px;
 
 display: flex;
- align-items: center;
-justify-content: center;
+flex-direction: column; /* Adicionado para alinhar verticalmente */
+justify-content:  center;
+
 }
 
-.DivEsquerdaDentro{
+
+.TextoEsquerdaDentro{
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
-    right: 0;
+   font-size: 23px;
+
+    position: relative;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 150px;
+    width: auto;
+    
+    
+    
 }
+
+
+.DivEsquerdaDentroCaixas{
+
+    display: flex; /* Garantir que os elementos dentro sejam flexíveis */
+    flex-direction: column;
+    align-items: flex-end;
+   
+    
+
+
+    ul{
+        display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+     list-style-type: none;
+     margin: 0%;
+     padding: 0%;
+    
+    }
+}
+
+.EsquerdaDentroCaixaEndereço, .EsquerdaDentroCaixaWhatsapp{ 
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 3%;
+    margin: 0 25px;
+
+    background-color: white;
+
+    width: 300px;
+    height: 300px;
+    
+    transition: 1s;
+
+    
+    
+
+}
+
+.EsquerdaDentroCaixaEndereço:hover, .EsquerdaDentroCaixaWhatsapp:hover{
+
+    width: 350px;
+    height: 350px;
+
+   
+
+}
+
+/* Div lado Esquerdo*/
+
+
+/* Div  lado Direito*/
 
 .DivDireita{
     align-items: center;
-    width: 48%;
+    width: 46%;
     height: 783px;
     position: absolute;
     right: 0;
@@ -439,6 +514,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+
 
 label{
 font-family: Verdana, Geneva, Tahoma, sans-serif;
