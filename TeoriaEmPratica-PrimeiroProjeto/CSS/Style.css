@@ -386,17 +386,31 @@ height: 783px;
 }
 
 
-/* Div  lado Esquerdo*/
+/* Div Top (Em cima)*/
+
+.DivTop{
+margin-top: 40px;
+
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+
+width: 100%;
+height: 80px;
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+}
 
 .DivEsquerda{
-align-items: flex-end; /* Alinha a direita*/
-width: 46%;
-height: 783px;
+align-items: center; /* Alinha a direita*/
+width: 100%;
+height: 743px;
 position: absolute;
-left: 0;
-
-margin-right: 20px;
-margin-left: 20px;
 
 display: flex;
 flex-direction: column; /* Adicionado para alinhar verticalmente */
@@ -405,31 +419,15 @@ justify-content:  center;
 }
 
 
-.TextoEsquerdaDentro{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 23px;
-
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    height: 150px;
-    width: auto;
-    
-    
-    
-}
-
-
 .DivEsquerdaDentroCaixas{
 
     display: flex; /* Garantir que os elementos dentro sejam flexíveis */
     flex-direction: column;
     align-items: flex-end;
-   
-    
 
+   
+
+    /*Icones Dentro da caixa pagina 2*/
 
     ul{
         display: inline-flex;
@@ -440,11 +438,89 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
      list-style-type: none;
      margin: 0%;
      padding: 0%;
-    
+
+
+        li{
+            display: flex;
+
+            
+            img{
+                margin-top: 20px;
+
+                width: auto;
+                height: 100px;
+
+                transition: 1s;
+
+            }
+
+            h3{
+                font-size: 25px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+                transition: 1s;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+
+                margin-top: 0;
+
+                font-size: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+                transition: 1s;
+            }
+
+
+        }
+
+        li:hover, h3:hover, p:hover{
+
+            img{
+                margin-top: 20px;
+
+                width: auto;
+                height: 140px;
+
+            }
+
+            h3{
+                font-size: 30px;
+              
+            }
+
+            a{
+
+                color: blue;
+
+                font-size: 25px;
+            }
+
+        }
+
     }
+
+/*Colocar Icones e nomes dentro da caixa um sobre o outro*/
+
+.EsquerdaDentroCaixaWhatsapp, .EsquerdaDentroCaixaEndereço, .EsquerdaDentroCaixaFormulario{
+
+flex-direction: column;
+
 }
 
-.EsquerdaDentroCaixaEndereço, .EsquerdaDentroCaixaWhatsapp{ 
+/*Colocar Icones e nomes dentro da caixa um sobre o outro*/
+
+
+
+
+
+    /*Icones Dentro da caixa pagina 2*/
+
+}
+
+.EsquerdaDentroCaixaEndereço, .EsquerdaDentroCaixaWhatsapp, .EsquerdaDentroCaixaFormulario{ 
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -459,43 +535,23 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     
     transition: 1s;
 
-    
-    
+
 
 }
+
 
 .EsquerdaDentroCaixaEndereço:hover, .EsquerdaDentroCaixaWhatsapp:hover{
+    margin-top: 80px;
 
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
 
+
+}
+
+
+.EsquerdaDentroCaixaFormulario:hover{
    
-
-}
-
-/* Div lado Esquerdo*/
-
-
-/* Div  lado Direito*/
-
-.DivDireita{
-    align-items: center;
-    width: 46%;
-    height: 783px;
-    position: absolute;
-    right: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-
-    display: flex;
-     align-items: center;
-    justify-content: center;
-}
-
-
-.DivDireitaDentro{
-    position: absolute;
-    left: 0;
     background-color: aqua;
 
     /*Define o tamanho da caixa*/
@@ -504,55 +560,70 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex; 
     border-radius: 3%; /*Arredondar Cantos*/
 
+    margin-top: 80px;
+
 }
 
 .Formulario{
-width: 400px;
-height: 550px;
-
-display: flex;
-align-items: center;
-justify-content: center;
+    width: 400px;
+    height: 550px;
+    
+    display: none;
 }
 
 
-label{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-weight: bold;
-}
 
-input{
-    border: 0;
+    .Formulario:hover{
+        width: 400px;
+        height: 550px;
+   
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    width: 340px;
-    height: 30px;
+    }
 
-}
+        .ListaForm{
+            padding: 0%;
+            list-style-type: none;
+            flex-direction: column;
+       
+                label{
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-weight: bold;
+                }
+                
+                input{
+                    border: 0;
+                
+                    width: 340px;
+                    height: 30px;
+                
+                }
+                
+                textarea{
+                    border: 0;
+                    border-radius: 1%; /*Arredondar Cantos*/
+                
+                    resize: none;
+                    width: 340px;
+                    height: 100px;
+                }
+                
+                button{
+                    float: right; /* permite que um elemento seja movido para a esquerda ou para a direita */
+                    width: 100px;
+                    height: 40px;
+                
+                    border: none;
+                    border-radius: 8%; /*Arredondar Cantos*/  
+                
+                }
+            }
 
-textarea{
-    border: 0;
-    border-radius: 1%; /*Arredondar Cantos*/
+    
 
-resize: none;
-    width: 340px;
-    height: 100px;
-}
-
-button{
-    float: right; /* permite que um elemento seja movido para a esquerda ou para a direita */
-    width: 100px;
-    height: 40px;
-
-    border: none;
-    border-radius: 8%; /*Arredondar Cantos*/  
-}
-
-.ListaForm{
-    padding: 0%;
-    list-style-type: none;
-}
-
-
+    
 
 footer{
 background-color: aqua; /*Cor do fundo da <DIV>*/
