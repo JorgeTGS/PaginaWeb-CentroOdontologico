@@ -535,8 +535,6 @@ flex-direction: column;
     
     transition: 1s;
 
-
-
 }
 
 
@@ -564,14 +562,28 @@ flex-direction: column;
 
 }
 
-.Formulario{
-    width: 400px;
-    height: 550px;
+
+.CaixaFormulario{
+    opacity: 100;
     
-    display: none;
 }
 
 
+
+.Formulario{
+    position: absolute;
+
+    width: 400px;
+    height: 550px;
+    
+   opacity: 0; /*Faz Ficar Transparente*/
+
+   transition: 0s;
+   transition-delay: 0s;
+
+   z-index: 100;
+
+}
 
     .Formulario:hover{
         width: 400px;
@@ -581,9 +593,19 @@ flex-direction: column;
         align-items: center;
         justify-content: center;
 
+        transition: 1s;
+
+        background-color: aqua;
+        border-radius: 3%;
+
+        opacity: 100; /*Faz voltar a ser visivel*/
+
     }
 
+    
+
         .ListaForm{
+            display: flex;
             padding: 0%;
             list-style-type: none;
             flex-direction: column;
@@ -591,6 +613,8 @@ flex-direction: column;
                 label{
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                     font-weight: bold;
+                    margin-bottom: 2px;
+                    
                 }
                 
                 input{
@@ -611,14 +635,25 @@ flex-direction: column;
                 }
                 
                 button{
-                    float: right; /* permite que um elemento seja movido para a esquerda ou para a direita */
-                    width: 100px;
+                   
+                    width: 340px;
                     height: 40px;
                 
                     border: none;
-                    border-radius: 8%; /*Arredondar Cantos*/  
+                    border-radius: 3%; /*Arredondar Cantos*/  
+
+                  font-size: 18px;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
                 
                 }
+
+                /*active faz que quando o botão seja atiavdo (clicado) execute o que esta dentro */
+                button:active{
+              
+                    transform: scale(0.95); /*Dominui um pocuo o tamanho*/
+
+                }
+
             }
 
     
