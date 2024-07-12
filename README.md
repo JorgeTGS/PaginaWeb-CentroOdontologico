@@ -1,7 +1,7 @@
 # Projeto de Página Web 🌐 
 (Meu Primeiro Projeto)
 
-Este projeto consiste na criação de uma página web estática utilizando HTML e CSS. A página é desenvolvida para exibir os serviços oferecidos em um Centro Odontológico, informações de contato e uma seção de formulário de contato.
+Este projeto consiste na criação de uma página web utilizando HTML e CSS. A página é desenvolvida para exibir os serviços oferecidos em um Centro Odontológico, informações de contato e uma seção de formulário de contato.
 
 # Estrutura do Projeto 📄
 - **index.html**: Arquivo principal que contém a estrutura básica da página web.
