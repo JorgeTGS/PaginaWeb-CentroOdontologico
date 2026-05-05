@@ -3,56 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Odontológico</title>
-    <link rel="stylesheet" href="CSS/Style.css"/>
+    
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="script.js" defer></script> 
+    <!-- 
+O atributo "defer" faz com que o JavaScript seja carregado em paralelo
+ao HTML, mas só seja executado depois que toda a página estiver carregada.
+Isso evita erros ao tentar acessar elementos que ainda não existem no DOM.
+-->
+    
+    <title>Dragões</title>
 </head>
-<body>
-    <div class="Cabeçalho">
-        <img class="Logo" src="Imagens/Logo.png"><strong>CENTRO ODONTOLÓGICO</strong></img>
-        <nav>
-            <ul>
-                <li class="AlinharDir"><strong><a class="BotãoNãoInterativo" >PÁGINA PRINCIPAL</a></strong></li>
-                <li><strong><a class="BotãoInterativo" href="html/Pagina2.html">CONTATO</a></strong></li>
+
+<body> 
+    <div class="FundoPrincipal">
+
+        <img id="ImgDragao" src="Imagens/Balerion.png">
+
+        <div class="Bio">
+            <ul id="AlterarMargem">
+                <li>
+                    <h1 id="Titulo">Balerion the Black Dread</h1>
+                </li>
+                <li>
+                    <p id="Descricao">
+                        O maior e mais veterano dos dragões Targaryen, Balerion, foi montado por Aegon the Conqueror e mais tarde, ainda que durante um espaço de tempo muito curto, pelo Rei Viserys I. O dragão negro e vermelho morreu antes do início de House of the Dragon, mas a sua gigantesca caveira pode ser apreciada em exposição no Red Keep.
+                    </p>
+                </li>
             </ul>
-        </nav>
-    </div>
-
-    <div>
-        <img class="ImgPrincipal" src="Imagens/ImgPrincipal.png">
-        
-        <div class="ImgPrincipalDentro">
-
-            <div class="Caixa1">
-                <ul>
-                    <li><img class="ImgCaixa" src="Imagens/Ortodontia.jpg"/></li>
-                    <li><h1>ORTODONTIA</h1></li>
-                    <li><p>Imagine ter um sorriso alinhado, confiante e radiante – a Ortodontia torna isso realidade.</p></li>
-                </ul>
-            </div>
-            <div class="Caixa2">
-                <ul>
-                    <li><img class="ImgCaixa" src="Imagens/Endodontia.jpg"/></li>
-                    <li><h1>ENDODONTIA</h1></li>
-                    <li><p>Endodontia, ou tratamento de canal, salva dentes com infecção ou dano grave na polpa.</p></li>
-                </ul>
-            </div>
-             <div class="Caixa3">
-                <ul>
-                    <li><img class="ImgCaixa" src="Imagens/Implante.jpg"/></li>
-                    <li><h1>IMPLANTE</h1></li>
-                    <li><p>Implantodontia coloca implantes dentários para substituir raízes perdidas e restaurar dentes.</p></li>
-                </ul>
-            </div>
+        </div>
+    
+        <div class="ProxDragoes">
+            <ul>
+                <li>
+                    <button class="Botao Ativado" onclick="TrocaDeConteudo('B1'); ModoAtivo(this)"></button>
+                    <button class="Botao" onclick="TrocaDeConteudo('B2'); ModoAtivo(this)"></button>
+                    <button class="Botao" onclick="TrocaDeConteudo('B3'); ModoAtivo(this)"></button>
+                    <button class="Botao" onclick="TrocaDeConteudo('B4'); ModoAtivo(this)"></button>
+                    <button class="Botao" onclick="TrocaDeConteudo('B5'); ModoAtivo(this)"></button>
+                    <button class="Botao" onclick="TrocaDeConteudo('B6'); ModoAtivo(this)"></button>
+                </li>
+            </ul>
         </div>
 
     </div>
-    
-    <footer>
-        <img src="Imagens/Logo.png"/>
-            <ul>
-                <li><a>Centro Odontológico</a></li>
-                <li><a class="Espaço">/ Todos os direitos reservados © 2024</a></li>
-            </ul>  
-    </footer>
 </body>
 </html>
