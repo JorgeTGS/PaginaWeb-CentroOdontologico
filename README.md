@@ -1,34 +1,42 @@
-# Projeto de Página Web 🌐 
-(Meu Primeiro Projeto)
+# Dragões - Game of Thrones 🌐
 
-Este projeto consiste na criação de uma página web utilizando HTML e CSS. A página é desenvolvida para exibir os serviços oferecidos em um Centro Odontológico, informações de contato e uma seção de formulário de contato.
+Este projeto é uma página web interativa dedicada aos dragões do universo de "Game of Thrones", com foco nos dragões Targaryen. Através da interação com botões, o usuário pode explorar informações sobre cada dragão, incluindo imagens e descrições.
 
-# Estrutura do Projeto 📄
-- **index.html**: Arquivo principal que contém a estrutura básica da página web.
-- **CSS/style.css**: Arquivo CSS que define o estilo visual da página, incluindo cores, fontes, layout e efeitos visuais.
+Este projeto também marca meu retorno à programação após um longo período sem prática. Utilizei um código antigo como base e, com o apoio de ferramentas de IA para tirar dúvidas e corrigir erros, consegui refatorar e melhorar a aplicação.
 
-# Funcionalidades 🛠️
-- **Cabeçalho e Navegação**: Inclui um cabeçalho com logotipo do centro odontológico, menu de navegação e links interativos para as diferentes seções da página.
-  
-- **Seções de Serviços**: Divididas em caixas destacando diferentes serviços oferecidos pelo centro odontológico. Cada caixa inclui uma imagem ilustrativa, título e descrição do serviço.
-  
-- **Seção de Contato**: Contém informações de contato como telefone e endereço. Também inclui um formulário de contato básico.
-  
-- **Rodapé**: Inclui informações sobre o centro odontológico e direitos autorais.
+## Funcionalidades 🛠️
 
-# Tecnologias Utilizadas 💻
-- HTML5
-- CSS3
+* Interatividade com botões para alternar entre diferentes dragões
+* Atualização dinâmica de nome, descrição e imagem
+* Layout responsivo para diferentes dispositivos
 
-# Como Usar 🚀
+## Tecnologias Utilizadas 💻
+
+* HTML
+* CSS
+* JavaScript
+
+## Estrutura do Projeto 📄
+
+* `index.html`: Estrutura principal da página
+* `Css/style.css`: Estilização e layout
+* `script.js`: Lógica de interatividade
+* `Imagens/`: Arquivos de imagem dos dragões
+
+## Como Usar 🚀
+
 1. Clone o repositório:
+
    ```bash
-   git clone https://github.com/JorgeTGS/TeoriaEmPratica-PrimeiroProjeto.git
-2. Abra o arquivo index.html em seu navegador web.
-3. Navegue pelas diferentes seções para visualizar os serviços oferecidos e informações de contato.
+   git clone https://github.com/JorgeTGS/Dragoes-GameOfThrones.git
+   ```
+2. Abra o arquivo `index.html` no navegador
+3. Utilize os botões para navegar entre os dragões
 
-# Contribuições 🎉
-Contribuições são bem-vindas! Sinta-se à vontade para sugerir melhorias através de pull requests. Agradeço qualquer dica, pois este é meu primeiro projeto!
+## Contribuição 🎉
 
-# Autor 🖊️
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
+
+## Autor 🖊️
+
 Jorge Jordão de Araújo Silva
